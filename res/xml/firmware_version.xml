@@ -63,13 +63,13 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- RevengeOS -->
+    <!-- HyconOS -->
     <Preference
-        android:key="revengeos_version"
-        android:title="@string/revengeos_version"
+        android:key="hycon_version"
+        android:title="@string/hycon_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.revengeos.settings.preference.deviceinfo.RevengeOSVersionPreferenceController"/>
+        settings:controller="com.hycon.settings.preference.deviceinfo.HyconOSVersionPreferenceController"/>
 
     <!-- Build -->
     <Preference

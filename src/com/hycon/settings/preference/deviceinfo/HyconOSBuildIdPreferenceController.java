@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.revengeos.settings.preference.deviceinfo;
+package com.hycon.settings.preference.deviceinfo;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -23,11 +23,11 @@ import android.os.SystemProperties;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.R;
 
-public class RevengeOSVersionPreferenceController extends BasePreferenceController {
+public class HyconOSBuildIdPreferenceController extends BasePreferenceController {
 
-    private final String KEY_REVENGEOS_VERSION_PROP = "ro.revengeos.version";
+    private final String KEY_HYCON_BUILD_ID_PROP = "ro.hycon.build_id";
  
-    public RevengeOSVersionPreferenceController(Context context,
+    public HyconOSBuildIdPreferenceController(Context context,
             String preferenceKey) {
         super(context, preferenceKey);
     }
@@ -39,7 +39,7 @@ public class RevengeOSVersionPreferenceController extends BasePreferenceControll
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_REVENGEOS_VERSION_PROP,
+        return SystemProperties.get(KEY_HYCON_BUILD_ID_PROP,
                 mContext.getString(R.string.unknown));
     }
 }
